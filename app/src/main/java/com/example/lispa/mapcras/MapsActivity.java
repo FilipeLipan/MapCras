@@ -11,8 +11,6 @@ import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,7 +18,6 @@ import android.widget.ProgressBar;
 import android.widget.Spinner;
 import android.widget.Toast;
 
-import com.example.lispa.mapcras.adapter.CrasInfoWindowAdapter;
 import com.example.lispa.mapcras.model.BaseEntity;
 import com.example.lispa.mapcras.modelRetrofit.Body;
 import com.example.lispa.mapcras.modelRetrofit.Cras;
@@ -274,8 +271,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
             result = makeKsoapCall(URL, SOAP_ACTION, envelope);
             if (!result.equals("anyType{}")) {
-                mEstados = Convertion.convertStringIntoArrayOfObjects(result);
-                mEstadosString = Convertion.convertStringIntoArrayOfStringOjects(result);
+                mEstados = Conversion.convertStringIntoArrayOfObjects(result);
+                mEstadosString = Conversion.convertStringIntoArrayOfStringOjects(result);
             }
             return null;
         }
@@ -335,8 +332,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
 
                 result = makeKsoapCall(URL, SOAP_ACTION, envelope);
                 if (!result.equals("anyType{}")) {
-                    mMunicipios = Convertion.convertStringIntoArrayOfObjects(result);
-                    mMunicipiosString = Convertion.convertStringIntoArrayOfStringOjects(result);
+                    mMunicipios = Conversion.convertStringIntoArrayOfObjects(result);
+                    mMunicipiosString = Conversion.convertStringIntoArrayOfStringOjects(result);
                 }
             }
             return null;

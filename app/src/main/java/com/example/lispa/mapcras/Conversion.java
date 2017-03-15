@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  * Created by lispa on 09/12/2016.
  */
 
-public class Convertion {
+public class Conversion {
 
     public static ArrayList<BaseEntity> convertStringIntoArrayOfObjects(String objString){
 
