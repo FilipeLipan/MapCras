@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MapCras</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="load_state">Carregar Estados</string>
+    <string name="recover_state_error">Não foi possível recuperar os dados</string>
+    <string name="recover_state_sucess">Dados recuperados com sucesso!</string>
+</resources>
